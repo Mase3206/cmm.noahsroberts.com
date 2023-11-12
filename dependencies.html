@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en_US">
+	<head>
+		<meta charset="UTF-8">
+
+		<!-- Provide a description of your page: -->
+		<meta name="description" content="Dependencies makes sure a program has all the modules it needs">
+
+		<!-- Provide the author information for the page: -->
+		<meta name="author" content="Noah S. Roberts">
+
+		<!-- Other meta elements -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Favicon -->
+		<link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+
+		<title>Dependencies | Common Module Manager</title>
+		<link rel="stylesheet" href="/css/style.css">
+	</head>
+
+	<body>
+		<header>
+			<table>
+				<tr>
+					<td class="site-title">
+						<h1><a href="/" id="website-title">Common Module Manager</a></h1>
+					</td>
+	
+					<td class="page-nav">
+						<div class="navbar mono"> <!-- This is my attempt at a navbar -->
+							<p> <a href="/reformat.html">reformat</a>&ensp; <a href="/dependencies.html">dependencies</a> </p> 
+						</div>
+					</td>
+				</tr>
+			</table>
+		</header>
+		
+		<div class="content">
+			<h2>Dependencies</h2>
+
+			<p>
+				I do most of my development in macOS, which, for some unknown reason, has non-standard and out-of-date versions of basically every programming language (except Swift, of course). This can be fixed by installing more recent versions via Homebrew, but macOS will not switch the default global interpreter to the Homebrew version unless you do some frustrating tinkering. All this weirdness means that modules installed with pip can be installed in a billion different places, and it leads to a lot of "module is not installed" errors when trying to import things like Pandas (ugh) or PyYAML. 
+			</p>
+
+			<p>
+				To fix this, I present: Dependencies! A simple Python program that can be interfaced with via command line or imported by another program to see if the specific interpreter and environment your program is running in has the modules it depends on to function (a.k.a. dependencies). If any are missing, it will automatically install them. I am not going to go into detail about how to use Dependencies via import or CLI here, because that's what the GitHub repository is for. You can find it at <a href="https://github.com/Mase3206/py-common-modules" target="_blank" title="Link: GitHub repository for py-common-modules">Mase3206/py-common-modules</a>
+			</p>
+		</div>
+		
+		<footer>
+			<table>
+				<tr>
+					<td id="footer-left">
+						<p>&copy; 2023 Noah S. Roberts, licensed under CC BY-NC-SA 4.0</p>
+					</td>
+					
+					<td id="footer-right" >
+						<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"><img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc-sa.svg" width="60" id="cc-image" /></a>
+					</td>
+				</tr>
+			</table>
+		</footer>
+	</body>
+</html>

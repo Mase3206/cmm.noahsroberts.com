@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en_US">
+	<head>
+		<meta charset="UTF-8">
+
+		<!-- Provide a description of your page: -->
+		<meta name="description" content="Common Module Manager (CMM) is a basic package manager I made to install, remove, and update code I commonly use across many programs to centrally control installation and updates.">
+
+		<!-- Provide the author information for the page: -->
+		<meta name="author" content="Noah S. Roberts">
+
+		<!-- Other meta elements -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Favicon -->
+		<link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+
+		<title>Home | Common Module Manager</title>
+		<link rel="stylesheet" href="/css/style.css">
+	</head>
+
+	<body>
+		<header>
+			<table id="header">
+				<tr>
+					<td class="site-title">
+						<h1><a href="/" id="website-title">Common Module Manager</a></h1>
+					</td>
+	
+					<td class="page-nav">
+						<div class="navbar mono"> <!-- This is my attempt at a navbar -->
+							<p> <a href="/reformat.html">reformat</a>&ensp; <a href="/dependencies.html">dependencies</a> </p> 
+						</div>
+					</td>
+				</tr>
+			</table>
+		</header>
+		
+		<div class="content">
+			<h2>Home</h2>
+
+			<p>
+				Common Module Manager (CMM) is a basic package manager I made to install, remove, and update code I commonly use across many programs to centrally control installation and updates. I created it when I realized I began using one program, reformat.py, in a bunch of my projects. However, as I worked on each project, I made little edits to reformat that may or may not have been compatible with the other instances. Now, a framework to fix this already exists: pip. <a href="https://pypi.org/project/pip/" target="_blank" title="Link: PyPI page for Python pip">Pip</a> is the built-in module manager for Python. However, the process of actually getting a module onto a pip repository is... difficult &mdash; but, because it's mostly for my use, I am not too concerned with getting it onto a pip repository.
+			</p>
+
+			<p>
+				<strong>So I made my own!</strong> It's not perfect. I currently don't have any arm64 binaries (but I'm working on it!) and only one package can be passed at a time, but it's better than nothing. It has also been a good learning experience about where packages and other random variables (like package lists) are located in various operating systems. I am not going to go into detail about how to use CMM or the modules it updates here, because that's what the GitHub repository is for. You can find it at <a href="https://github.com/Mase3206/py-common-modules" target="_blank" title="Link: GitHub repository for py-common-modules">Mase3206/py-common-modules</a>.
+			</p>
+
+			<p>If you want to install it, <a href="/downloads.html">click here</a> to open the downloads page.</p>
+		</div>
+		
+		<footer>
+			<table>
+				<tr>
+					<td id="footer-left">
+						<p>&copy; 2023 Noah S. Roberts, licensed under CC BY-NC-SA 4.0</p>
+					</td>
+					
+					<td id="footer-right" >
+						<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"><img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc-sa.svg" width="60" id="cc-image" /></a>
+					</td>
+				</tr>
+			</table>
+		</footer>
+	</body>
+</html>

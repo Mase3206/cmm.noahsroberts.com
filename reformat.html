@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en_US">
+	<head>
+		<meta charset="UTF-8">
+
+		<!-- Provide a description of your page: -->
+		<meta name="description" content="Reformat is given some data in some format and spits out that same data in a different format.">
+
+		<!-- Provide the author information for the page: -->
+		<meta name="author" content="Noah S. Roberts">
+
+		<!-- Other meta elements -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Favicon -->
+		<link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+
+		<title>Reformat | Common Module Manager</title>
+		<link rel="stylesheet" href="/css/style.css">
+	</head>
+
+	<body>
+		<header>
+			<table>
+				<tr>
+					<td class="site-title">
+						<h1><a href="/" id="website-title">Common Module Manager</a></h1>
+					</td>
+	
+					<td class="page-nav">
+						<div class="navbar mono"> <!-- This is my attempt at a navbar -->
+							<p> <a href="/reformat.html">reformat</a>&ensp; <a href="/dependencies.html">dependencies</a> </p> 
+						</div>
+					</td>
+				</tr>
+			</table>
+		</header>
+		
+		<div class="content">
+			<h2>Reformat</h2>
+			
+			<p>
+				Reformat is all about data. It has a bunch of functions that just change the format of data it receives. For example, one function takes a list of lists, where each sublist has a complete set of arguments (i.e. <span class="mono">[['a=1', 'b=1'], ['a=2', 'b=2']]</span>) and moves them around such that each sublist then has all the values for each argument (i.e. <span class="mono">[['a=1', 'a=2'], ['b=1', 'b=2']]</span>). This seems like a novel task, and it is, but it is extremely important for another project I worked on called Handbrake Auto-Transcode. If you're interested in learning more about that project, you can visit the repository at <a href="https://github.com/Mase3206/HandBrake-Auto-Transcode" target="_blank" title="Link: GitHub repo for HandBrake Auto-Transcode">Mase3206/HandBrake-Auto-Transcode</a> or <a href="https://noahsroberts.com/code/" target="_blank" title="Link: Post on the latest update to HandBrake Auto-Transcode">this page</a> on my website.
+			</p>
+		</div>
+		
+		<footer>
+			<table>
+				<tr>
+					<td id="footer-left">
+						<p>&copy; 2023 Noah S. Roberts, licensed under CC BY-NC-SA 4.0</p>
+					</td>
+					
+					<td id="footer-right" >
+						<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"><img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc-sa.svg" width="60" id="cc-image" /></a>
+					</td>
+				</tr>
+			</table>
+		</footer>
+	</body>
+</html>
